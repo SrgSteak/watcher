@@ -1,8 +1,12 @@
 <!-- if data arrived, render the list! else, render a loading message -->
 <ng-container *ngIf="topAnime else loading">
   <!-- loop all anime in the list, render the title -->
-  <div *ngFor="let anime of topAnime">
-    {{ anime.title }}
+  <div class="card" *ngFor="let anime of topAnime">
+    <img src="{{ anime.image_url }}" />
+    <div class="darken">
+      <span class="title">{{ anime.title }}</span>
+    </div>
+    <span class="score">{{ anime.score }}</span>
   </div>
 </ng-container>
 <ng-template #loading>
