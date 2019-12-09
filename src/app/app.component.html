@@ -1,0 +1,10 @@
+<!-- if data arrived, render the list! else, render a loading message -->
+<ng-container *ngIf="topAnime else loading">
+  <!-- loop all anime in the list, render the title -->
+  <div *ngFor="let anime of topAnime">
+    {{ anime.title }}
+  </div>
+</ng-container>
+<ng-template #loading>
+  Fetching data, please wait ...
+</ng-template>

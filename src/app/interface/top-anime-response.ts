@@ -1,3 +1,6 @@
+/**
+ * Response from the jikan API at https://api.jikan.moe/v3/top/anime
+ */
 export interface TopAnimeResponse {
   request_hash: string; // "request:top:f78636d836639d2d6d40b9fe25d9ce05dd239ab0",
   request_cached: boolean; // true,
