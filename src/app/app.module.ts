@@ -10,7 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     CommonModule,
     HttpClientModule // I'm here to enable the HttpClient service and more!
   ],
